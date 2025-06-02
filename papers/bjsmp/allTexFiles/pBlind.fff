@@ -1,0 +1,38 @@
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+\centering
+\pandocbounded{\includegraphics[keepaspectratio]{pBlind_files/figure-latex/reliability-1.pdf}}
+\caption{\label{fig:reliability}Reliability as a function of trial size (\(L\)) for different signal-to-noise values (\(\gamma\)). Higher values of \(\gamma\) lead to higher reliability for fewer trials.}
+\end{figure*}
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+\centering
+\pandocbounded{\includegraphics[keepaspectratio]{pBlind_files/figure-latex/obsCor-1.pdf}}
+\caption{\label{fig:obsCor}Confidence interval coverage from simulated data with known ground truth. The figure shows 100 simulations for each of three setups. In each setup, task signal-to-noise was \(\gamma=.143\) and each individual performed 100 trials in each of two conditions per task. The three setups have, respecitvely, \(I=20\), \(I=100\), and \(I=500\) individuals. Confidence intervals are denoted with vertical lines, and these come from Fisher's z-transform on sample correlations. These intervals are woefully miscalibrated failing to cover the true correlation in a majority of runs. Even worse, coverage decreases with increasing numbers of individuals.}
+\end{figure*}
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+\centering
+\pandocbounded{\includegraphics[keepaspectratio]{pBlind_files/figure-latex/example-1.pdf}}
+\caption{\label{fig:example}Model outputs. A. The points (plusses) are observed individual effects ordered from smallest to largest for one of the two tasks. The solid line is the corresponding model point estimate; the shaded area is the corresponding 95\% credible interval. There is a large degree of regularization indicating that much of the variability in the observed scores is due to trial noise. B. The histogram shows the posterior distribution of the correlation coefficient. The thick vertical line is the true value, and it is well within the posterior. The red point with confidence intervals is the observed correlation. It is attenuated and the CIs do not cover the true value.}
+\end{figure*}
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+\centering
+\pandocbounded{\includegraphics[keepaspectratio]{pBlind_files/figure-latex/sims-1.pdf}}
+\caption{\label{fig:sims}Planning for trial noise. A. Width ratio as a function of expansion factor. Width ratio is expansion of uncertainty when taking into account trial noise and is measured as the ratio of the posterior credible interval width to the sample confidence interval width (\(w/s\)). Exapansion factors are the reciprocal of the geometric mean of task reliability (\(1/a\)). The figure shows the case for \(\gamma=.2\) across a variety of trial sizes (\(L\)) and sample sizes (\(I\)). Gray dots are simulation replicates; the solid lines mark the 10th, 50th, and 90th percentiles across replicates. B. Tradeoff of trial size \(L\) and \(I\) needed to acheive a target credible interval with of \(.2\) in value for different signal-to-noise ratio values (\(\gamma\)).}
+\end{figure*}
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+
+{\centering \includegraphics[width=1\linewidth]{planning}
+
+}
+
+\caption{Analysis begins with measures of task goodness that are invariant to trial size $L$ and sample size $I$.  Suitable measures are signal-to-noise and ICC(1).  Reliability and attenuation factors reflect task goodness and trial size $L$ but not sample size $I$.  Uncertainty on correlations reflects reliability and the number of individuals $I$.  In this sense, reliability sits between task goodness and correlation precision---incorporating trial size but not sample size.}\label{fig:overall}
+\end{figure*}
